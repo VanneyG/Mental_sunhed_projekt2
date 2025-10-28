@@ -1,0 +1,439 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ main {
+     min-height: 850px;
+     background-color: rgb(198, 222, 238);
+     font-family: 'montserrat';
+     color: black;
+     border-radius: 20px;
+     overflow-x: hidden;
+ }
+
+ header {
+     position: relative;
+     height: 100px;
+     font-weight: 500;
+
+ }
+
+ .logo {
+     width: 80px;
+     height: 80px;
+     float: left;
+     padding: 1em 0 0 1em;
+ }
+
+
+
+ ul {
+     display: flex;
+     list-style-type: none;
+
+ }
+
+ ul li {
+     padding: .5em;
+ }
+
+ ul li a {
+     text-decoration: none;
+     color: black;
+
+ }
+
+ nav {
+
+     position: absolute;
+     top: 2em;
+     right: 2em;
+
+
+ }
+
+ /*-------------------------------------*/
+ .flere_backgrounds_animation {
+     min-height: 350px;
+     width: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     /*  background-size: 100% 100%;*/
+     animation: slides 40s linear infinite;
+     position: relative;
+
+
+ }
+
+ @keyframes slides {
+     0% {
+
+         background-image: url(../images/man-headphones-video-call-meeting-group.jpg);
+
+     }
+
+     35% {
+         background-image: url(../images/phonecall_therapy.jpg);
+     }
+
+     70% {
+         background-image: url(../images/chat_therapy.jpg);
+     }
+
+     100% {
+         background-image: url(../images/one\ to\ one_therapy.jpeg);
+     }
+ }
+
+
+ .image_text {
+     position: absolute;
+     top: 2%;
+     left: 5%;
+     font-family: 'montserrat extrabold';
+     font-size: 24px;
+
+
+ }
+
+ .first_text {
+     opacity: 0;
+     animation: aparecer 40s infinite;
+
+ }
+
+ @keyframes aparecer {
+
+     0% {
+         opacity: 1;
+
+     }
+
+     /* En el 100% de la animación, el texto es completamente visible */
+     35% {
+         opacity: 0;
+     }
+
+     70% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+ /*--------------------------*/
+ .second_text {
+     opacity: 0;
+     animation: aparecer2 40s linear infinite;
+
+ }
+
+ @keyframes aparecer2 {
+
+     0% {
+         opacity: 0;
+     }
+
+     /* En el 100% de la animación, el texto es completamente visible */
+     35% {
+         opacity: 1;
+     }
+
+     70% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+ .third_text {
+     opacity: 0;
+     animation: aparecer3 40s linear infinite;
+
+ }
+
+ @keyframes aparecer3 {
+
+     0% {
+         opacity: 0;
+     }
+
+     /* En el 100% de la animación, el texto es completamente visible */
+     35% {
+         opacity: 0;
+     }
+
+     70% {
+         opacity: 1;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+ .fourth_text {
+     opacity: 0;
+     animation: aparecer4 40s linear infinite;
+
+ }
+
+ @keyframes aparecer4 {
+
+     0% {
+         opacity: 0;
+     }
+
+     /* En el 100% de la animación, el texto es completamente visible */
+     35% {
+         opacity: 0;
+     }
+
+     70% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ /*   content inhold ------------------------*/
+ @media (max-width:960px) {
+     .flere_backgrounds_animation {
+         max-height: 320px
+     }
+
+     .image_text {
+         font-size: 24px;
+     }
+
+     .card {
+         font-size: 12px;
+     }
+ }
+
+ @media (min-width:1000px)and (max-width:2000px) {
+     .flere_backgrounds_animation {
+         height: 500px
+     }
+
+     .image_text {
+         font-size: 35px;
+     }
+
+     .card {
+         font-size: 18px;
+     }
+ }
+
+ @media (max-width:5000px) {
+     .flere_backgrounds_animation {
+         height: 900px
+     }
+
+     .card {
+         font-size: 24px;
+     }
+ }
+
+ /*------------------------------------------*/
+ .a_links:hover {
+     background-color: azure;
+     text-shadow: .4px .4px grey;
+ }
+
+ /*------------------------------*/
+ .quote {
+     height: 40px;
+     display: block;
+     margin-bottom: -38px;
+
+
+ }
+
+ .comments {
+     min-height: 20rem;
+ }
+
+ /*------------------------*/
+ /*  carousel of images with the arrows to the sides. */
+ .carousel {
+     width: 100%;
+     overflow-x: auto;
+     margin: 3em auto;
+     display: flex;
+     gap: 1em;
+     scroll-behavior: smooth;
+
+     scroll-snap-type: x mandatory;
+     scroll-marker-group: after;
+     anchor-name: --arrows;
+ }
+
+
+
+ .carousel::-webkit-scrollbar {
+     display: none;
+ }
+
+
+ .carousel::scroll-button(right),
+ .carousel::scroll-button(left) {
+     content: ' → ';
+     border: none;
+     background-color: #a3e2eb;
+     /* COLOR FONDO DE FLECHA*/
+     font-family: "montserrat";
+     font-size: 2.5rem;
+     color: rgb(94, 92, 92);
+     /* color flecha*/
+     height: 70px;
+     width: 70px;
+     border-radius: 50%;
+     padding-bottom: 0.1em;
+     cursor: pointer;
+     /*fija la position de las flechas*/
+     position: fixed;
+     position-anchor: --arrows;
+     position-area: right center;
+     translate: -90%;
+ }
+
+ .galery1::scroll-button(right),
+ .galery1::scroll-button(left) {
+     position-anchor: --arrows;
+
+ }
+
+ .carousel::scroll-button(left) {
+     content: '←';
+     position-area: left center;
+     translate: 90%;
+ }
+
+ .carousel::scroll-button(right):disabled,
+ .carousel::scroll-button(left):disabled {
+     opacity: 0.1;
+     cursor: auto;
+ }
+
+ /*--------------------------------------------------------*/
+
+ .card {
+     flex: 0 0 20em;
+     /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
+  que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
+     height: 12em;
+     background-color: rgb(185, 214, 233);
+     ;
+     /* COLOR TARJETA*/
+     padding: 1em;
+     /* marco  delgado que puede agrandarse_ da paso entre el background y la imagen */
+     border-radius: 1em;
+     text-align: center;
+     align-content: center;
+     scroll-snap-align: start;
+     /* va de la mano con el scroll-snap-type del contenedor;*/
+     width: 20em;
+     font-family: 'montserrat';
+
+     font-size: 12px;
+ }
+
+ /*-----------------------------------------------------------*/
+ .carousel::scroll-marker-group {
+     display: flex;
+     /* to have themm in a line */
+     justify-content: center;
+     gap: .5em;
+
+     margin-bottom: 20px;
+ }
+
+ .card::scroll-marker {
+     content: '';
+     /* cards1 es la clase dada a todas las img de la galleria */
+     height: 1em;
+     width: 1em;
+     background-color: silver;
+     border-radius: 50%;
+ }
+
+ .card::scroll-marker:target-current {
+     background-color: rgb(236, 160, 97)
+ }
+
+ /*---------------------------------------------------------------*/
+
+
+
+ footer {
+     background-color: rgb(155, 221, 247);
+     min-height: 100px;
+     margin: -70px;
+     position: relative;
+ }
+
+ footer table {
+     line-height: 120%;
+     margin: 20px 0 80px 100px;
+ }
+
+ footer th {
+     text-align: left;
+     font-family: 14px;
+
+ }
+
+ table caption {
+     font-weight: 500;
+     padding-bottom: 4px;
+     padding-top: 20px;
+
+ }
+
+ footer td:nth-child(1) {
+     padding-right: 25px;
+
+
+ }
+
+ #dage {
+     font-weight: 500;
+ }
+
+ #time {
+     font-size: 12px;
+ }
+
+ footer td:nth-child(2) {
+     padding-right: 25px;
+
+ }
+
+ table {
+     padding-top: 5px;
+     border-collapse: separate;
+     border-spacing: 5px 1px;
+
+ }
+
+ .ikon_image {
+     height: 20px;
+     padding-right: 5px;
+ }
+
+ #ikons_section {
+     position: absolute;
+     right: 90px;
+     bottom: 30px;
+
+
+ }
