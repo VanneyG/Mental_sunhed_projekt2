@@ -9,6 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css_files/index.css">
+    <link rel="stylesheet" href="css_files/start.css">
+
 </head>
 
 <body>
@@ -19,13 +21,15 @@
 
             <nav>
                 <ul>
+                    <li><a href="index.html"><img src="images/ikons/hus_ikon.png" class="hus_ikon" alt=""></a></li>
                     <li><a class="a_links" href="mere_om_os.html"> MERE OM OS </a> </li>
                     <li><a class="a_links" href="signup.html"> START </a></li>
 
                 </ul>
             </nav>
         </header>
-        <section class="flere_backgrounds_animation">
+        <div class="shared_box">
+            <!--  <section class="flere_backgrounds_animation">     -->
             <div class="image_text">
                 <p class="first_text" class="image_text_p"> ONLINE GRUPPE SESSIONS </P>
                 <br>
@@ -36,50 +40,25 @@
                 <p class="fourth_text" class="image_text_p">ONLINE INDIVIDUAL SESSIONS</P>
                 <br>
             </div>
-        </section>
-        <section class="comments">
-
-            <h3> <img src="images/ikons/comilla.png" alt="" class="quote"> </h3>
-
-            <div class="carousel">
-                <div>
-
-                    <h5 class="card"> Jeg er meget glad for at have et sted, hvor jeg ikke bliver dømt.
-                        <br><br> Jonas, 20 år
-                    </h5>
-                </div>
-                <div>
-
-                    <h5 class="card"> Det var befriende at åbne op uden at frygte dom.
-                        <br> <br> Julie, 17 år.
-                    </h5>
-                </div>
-                <div>
-
-                    <h5 class="card"> Jeg var i første gange bange for at andre tænte, at jeg var helt fuck-up. Men det
-                        var ingen grund til det. Jeg følte mig tryk.
-                        <br><br>Jonas, 22 år
-                    </h5>
-                </div>
-                <div>
-
-                    <h5 class="card"> Det hjalp mig med at berolige sindet. <br><br> Katrine, 18 år</h5>
-                </div>
-                <div>
-
-                    <h5 class="card"> Jeg kunne dele mine tænker frit, uden at vise mig gennem kameraet.Det lægger jeg
-                        meget vagt på.
-                        <br><br> Anne , 19 år
-                    </h5>
-                </div>
-                <div>
-
-                    <h5 class="card"> Jeg følte mig hørt.
-                        <br><br> Tina, 24 år
-                    </h5>
-                </div>
-                <div>
-        </section>
+            <!-- </section>  -->
+            <!--  <section class="signup_login">    -->
+            <div class="signup">
+                <form>
+                    <label>Sign up</label>
+                    <input type="text" name="txt" placeholder="User name" required="">
+                    <input type="e-mail" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button class="buttom signupbuttom" class="signup_bottom "><a href="login_side.html"> Sign up</a>
+                    </button>
+                    <br>
+                    <p id="p_text"> Hvis du har
+                        allerede en konto,
+                        klik på Login i stedet.</p>
+                    <button class="buttom" class="login_bottom"><a href="program_side.html">Login </a></button>
+                </form>
+            </div>
+            <!--  </section>  -->
+        </div>
         <footer>
             <div id="phone_openhours">
                 <table>

@@ -15,6 +15,10 @@
 
  }
 
+ .hus_ikon {
+     height: 20px;
+ }
+
  .image_text {
      display: inline-block;
 
@@ -120,7 +124,14 @@
  .buttom:hover {
      background: #7849ce;
      color: rgb(226, 209, 186);
+
  }
+
+ a {
+     color: #e0dede;
+     text-decoration: none;
+ }
+
 
  /*   content inhold queries ------------------------*/
  @media (max-width:295px) {
@@ -147,6 +158,11 @@
          height: 200px;
      }
 
+     .signupbuttom:active {
+         .disapear_from_format {
+             display: none;
+         }
+     }
 
  }
 
@@ -182,7 +198,7 @@
 
  }
 
- @media (min-width:481x)and (max-width:px) {
+ @media (min-width:481x)and (max-width:782px) {
 
      .signup {
          flex-shrink: 1;
@@ -225,9 +241,6 @@
 
      }
 
-
-
-     /*--------------------------------*/
      .signup {
 
          font-size: 150%;
