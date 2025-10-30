@@ -68,7 +68,7 @@
      width: 50%;
      flex-shrink: 1;
      overflow: hidden;
-     background: url(../images/gradient2.png);
+     background: #7d8e2e;
      border-radius: 10px;
      box-shadow: 5px 20px 50px #000;
  }
