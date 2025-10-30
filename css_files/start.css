@@ -44,57 +44,26 @@
 
 
  footer {
-     background-color: rgb(155, 221, 247);
-     min-height: 100px;
-     /*  margin: -70px; */
+
+
      margin-top: 2%;
-     position: relative;
-     display: flex;
-     justify-content: flex-start;
-     flex-wrap: wrap;
-     clear: both;
 
  }
 
 
 
- footer table {
-     line-height: 120%;
-     /* margin: 10px 3px 80px 30px;*/
-
-     display: flex;
-     flex-wrap: wrap;
-
- }
-
- #ikons_section {
-     flex-shrink: 1;
-     display: flex;
-     flex-wrap: wrap;
- }
 
  /*---------------------- sign up form */
 
 
- /*.signup_login {
 
-     background-color: white;
-     min-height: 400px;
-     width: 50%;
-     flex-shrink: 1;
-     overflow: hidden;
-     background: url(../images/gradient2.png);
-     border-radius: 10px;
-     box-shadow: 5px 20px 50px #000;
- }*/
 
 
  .signup {
-     /* position: relative;*/
-     /*  width: 100%;*/
+
      height: 100%;
      background-color: white;
-     /*  min-height: 400px;*/
+
      width: 50%;
      flex-shrink: 1;
      overflow: hidden;
@@ -246,15 +215,18 @@
 
  }
 
- @media (min-width:783px)and (max-width:2000px) {
+ @media (min-width:783px)and (max-width:900px) {
      .image_text {
          font-size: 18px;
          width: 60%;
-         /* det virker ikke .hvorfor???????   */
+
 
 
      }
 
+
+
+     /*--------------------------------*/
      .signup {
 
          font-size: 150%;
@@ -287,11 +259,37 @@
      }
  }
 
- @media (min-width:2001px)and (max-width:5000px) {
+ @media (min-width:901px)and (max-width:3000px) {
+     .signup {
+         width: 30%;
+         font-size: 100%;
+         padding: 1em;
+     }
+
+     .image_text {
+         font-size: 25px;
+         width: 70%;
+     }
+
+     nav {
+         font-size: 24px;
+     }
+
+     .card {
+         font-size: 24px;
+     }
+
+     .logo {
+         height: 200px;
+         width: 180px;
+     }
+ }
+
+ @media (min-width:3001px)and (max-width:5000px) {
      .signup {
          width: 20%;
          font-size: 200%;
-         padding: 11em;
+         padding: 10em;
      }
 
      .image_text {
@@ -315,7 +313,7 @@
 
  @media (min-width:5001px) {
      .signup {
-         width: 20%;
+         width: 25%;
          font-size: 200%;
          padding: 11em;
      }

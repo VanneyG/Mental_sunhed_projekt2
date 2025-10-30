@@ -56,6 +56,11 @@
 
  }
 
+ #ikons_section_findos {
+     padding-bottom: 8px;
+     padding-top: 10px;
+ }
+
  /*-------------------------------------*/
  .flere_backgrounds_animation {
      min-height: 350px;
@@ -351,25 +356,24 @@
 
  footer {
      background-color: rgb(155, 221, 247);
-     min-height: 100px;
-     margin: -70px;
-     /*  position: relative; */
+     min-height: 80px;
+     margin-top: -70px;
+     position: relative;
+     /* para centrar los ikons de footer*/
      display: flex;
      justify-content: flex-start;
+     /* align-content: center; */
+     /* pone los elementos al centro de footer*/
      flex-wrap: wrap;
 
  }
 
  footer table {
-
-     margin: 20px 0 80px 100px;
-     display: flex;
-     flex-wrap: wrap;
-     flex-shrink: 1;
-     padding-top: 5px;
+     padding-left: 20px;
      border-collapse: separate;
-     border-spacing: 5px 1px;
-     padding-left: 5px;
+
+
+     min-height: 50px;
 
 
  }
@@ -385,14 +389,15 @@
 
 
  table caption {
+     padding-top: 15%;
+     /* no coloco el padding-top en table, porque daria un espacio entre caption y el contenido de table (dage, timer)*/
      font-weight: 500;
-     padding-bottom: 4.5px;
-     padding-top: 20px;
-     flex-grow: 1;
+
 
  }
 
  footer td:nth-child(1) {
+
      padding-right: 30px;
 
 
@@ -405,8 +410,8 @@
 
  #dage {
      font-weight: 500;
-     display: flex;
-     flex-shrink: 1;
+
+
 
 
  }
@@ -417,28 +422,24 @@
  }
 
 
+ #ikons_section {
 
+     gap: 8px;
+     position: absolute;
+     right: 2%;
+ }
 
 
  .ikon_image_footer {
-     flex-grow: 1;
-     height: auto;
+     /* flex-grow: 1;*/
+     height: 30px;
      padding-right: 5px;
+     display: inline-block;
 
 
  }
 
- #ikons_section {
 
-     float: right;
-     padding-left: 70%;
-     padding-bottom: 10%;
-     display: flex;
-     flex-wrap: wrap;
-     gap: 8px;
-
-
- }
 
  #ikons_section_findos {
      flex-grow: 1;
