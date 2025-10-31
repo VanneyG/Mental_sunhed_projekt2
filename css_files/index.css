@@ -70,7 +70,7 @@
      width: 100%;
      background-size: cover;
      background-repeat: no-repeat;
-     /*  background-size: 100% 100%;*/
+
      animation: slides 40s linear infinite;
      position: relative;
      color: white;
@@ -100,8 +100,9 @@
 
 
  .image_text {
+
      position: absolute;
-     top: 2%;
+     top: 4%;
      left: 5%;
      font-family: 'montserrat extrabold';
      font-size: 24px;
@@ -109,9 +110,15 @@
 
  }
 
+ .image_text_p {
+     font-size: 24px;
+ }
+
+ /*--------------------making the text disappear by using opacity*/
  .first_text {
      opacity: 0;
      animation: aparecer 40s infinite;
+     margin-top: 20px;
 
  }
 
@@ -436,7 +443,7 @@
 
  .ikon_image_footer {
      /* flex-grow: 1;*/
-     height: 30px;
+     height: 25px;
      padding-right: 5px;
      display: inline-block;
 
@@ -498,6 +505,15 @@
 
          padding-left: 75%;
          padding-bottom: 10%;
+
+
+
+     }
+
+     .ikon_image_footer {
+
+         height: 35px;
+
 
 
 
