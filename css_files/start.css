@@ -167,10 +167,10 @@
 
  }
 
- @media (min-width:296px)and (max-width:480px) {
+ @media (min-width:296px)and (max-width:475px) {
 
 
-     .signup {
+     /* .signup {
          flex-shrink: 1;
          font-size: 13px;
 
@@ -178,7 +178,22 @@
          flex-grow: 1;
 
      }
+*/
+     .signup {
 
+         font-size: 16px;
+
+         width: 100%;
+
+
+     }
+
+     .image_text {
+         display: none;
+
+     }
+
+     /*----*/
      .image_text {
          width: 45%;
          flex-grow: 1;
@@ -199,7 +214,7 @@
 
  }
 
- @media (min-width:481x)and (max-width:782px) {
+ @media (min-width:475px)and (max-width:782px) {
 
      .signup {
          flex-shrink: 1;
