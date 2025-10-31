@@ -12,7 +12,7 @@
      color: #fdf9ef;
      border-radius: 20px;
      overflow-x: hidden;
-     font-size: 14px;
+     font-size: 13px;
      box-shadow: 1PX 1PX rgb(168, 162, 162);
  }
 
@@ -41,7 +41,7 @@
  }
 
  ul li {
-     padding: .5em;
+     padding-LEFT: .6em;
  }
 
  ul li a {
@@ -55,6 +55,7 @@
      position: absolute;
      top: 30%;
      right: 5%;
+
 
 
  }
@@ -486,6 +487,10 @@
  }
 
  @media (min-width:961px)and (max-width:2000px) {
+     .main {
+         font-size: 15px;
+     }
+
      table {
          font-size: 110%;
      }
