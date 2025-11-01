@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'montserrat';
 }
 
 .wholebox {
@@ -9,6 +10,7 @@
     color: black;
     background-color: rgb(48, 169, 210);
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 header {
@@ -25,14 +27,14 @@ header {
 }
 
 .logo {
-    padding-left: 10px;
-    height: 50px;
+    padding-left: 15px;
+    height: 70px;
 
 }
 
 .nav_header {
     position: absolute;
-    right: 10px;
+    right: 15px;
     bottom: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +44,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+
+
+}
+
+.nav_header ul li {
+    padding-right: 10px;
 }
 
 
@@ -62,22 +70,29 @@ ul li a {
 
 /* ahora, las 2 cajas dentro de el contenedor.cajas principales */
 .links_aside_box {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
     /* min-width: 100px; */
     height: 100%;
+    flex-basis: 25%;
     background-color: rgb(28, 9, 96);
 }
 
 .second_links ul {
-    padding-top: 20%;
+
+
     display: block;
+    padding-bottom: 20px;
+
     list-style: none;
+
 
 }
 
 .second_links ul li {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+
 
 }
 
@@ -127,7 +142,7 @@ ul li a {
 .image_courses {
     flex-grow: 1;
     height: 250px;
-    width: 280px;
+    width: 320px;
     /* width: 300px; */
     /* height: auto; */
     border-radius: 10px;
@@ -152,16 +167,30 @@ footer {
 }
 
 /* media queries */
-@media (min-width:296px)and (max-width:480px) {}
+@media (min-width:296px)and (max-width:480px) {
+    .second_links {
+        font-size: 18px;
+
+    }
+
+}
 
 @media (min-width:481x)and (max-width:782px) {
+    .logo {
+
+        height: 80px;
+
+    }
+
+    .second_links {
+        font-size: 26px;
+
+    }
+
     .box_image_couse {
         padding: 20px;
         width: 300px;
         height: 480px;
-
-        flex-grow: 1;
-        /* flex-box,para que agarre el campo restante */
 
     }
 
@@ -169,16 +198,95 @@ footer {
 
         height: 350px;
         width: 380px;
+    }
+}
+
+@media (min-width:783px)and (max-width:900px) {
+    .logo {
+
+        height: 90px;
+
+    }
+
+    .second_links {
+        font-size: 32px;
+
+    }
+
+    .box_image_couse {
+        padding: 20px;
+        width: 400px;
+        height: 450px;
+
+
+    }
+
+    .image_courses {
+
+        height: 450px;
+        width: 500px;
 
 
 
     }
 }
 
-@media (min-width:783px)and (max-width:2000px) {}
+@media (min-width:901px)and (max-width:1000px) {
+    .logo {
 
-@media (min-width:901px)and (max-width:3000px) {}
+        height: 90px;
 
-@media (min-width:3001px)and (max-width:5000px) {}
+    }
 
-@media (min-width:5001px) {}
+    .second_links {
+        font-size: 36px;
+
+    }
+
+    .box_image_couse {
+        padding: 20px;
+        width: 500px;
+        height: 550px;
+
+
+    }
+
+    .image_courses {
+
+        height: 500px;
+        width: 550px;
+
+
+
+    }
+}
+
+@media (min-width:1001px)and (max-width:2000px) {
+    .logo {
+
+        height: 100px;
+
+    }
+
+    .second_links {
+        font-size: 36px;
+
+    }
+
+    .box_image_couse {
+        padding: 20px;
+        width: 600px;
+        height: 550px;
+
+
+    }
+
+    .image_courses {
+
+        height: 500px;
+        width: 700px;
+
+
+
+    }
+}
