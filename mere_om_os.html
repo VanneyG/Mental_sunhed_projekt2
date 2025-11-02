@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: montserrat;
+        }
+
+        header {
+            position: relative;
+            height: 100px;
+            font-weight: 500;
+            background-color: rgb(168, 127, 255);
+
+        }
+
+        .hus_ikon {
+            height: 20px;
+            padding-right: 10px;
+        }
+
+        .logo {
+            padding-left: 15px;
+            height: 70px;
+
+        }
+
+        .nav_header {
+            position: absolute;
+            right: 15px;
+            bottom: 20px;
+            /*   display: flex;
+            flex-wrap: wrap;*/
+        }
+
+        .nav_header ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+
+
+        }
+
+        .nav_header ul li {
+            padding-right: 10px;
+        }
+
+
+        ul li a {
+            text-decoration: none;
+            color: #fdf9ef;
+
+        }
+
+        /*------------------------*/
+        #information {
+            min-height: 800px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .article_image {
+            flex-grow: 1;
+            height: 100vw;
+            width: 80vw;
+
+            margin: 0 0 2px 10%;
+            display: block;
+            border-radius: 80px 20px;
+            scale: .8;
+            opacity: 0;
+            animation: image_disapear;
+            animation-timeline: view();
+            animation-range: entry exit;
+            animation-delay: 5seg;
+        }
+
+
+        /* animation-images */
+        @keyframes image_disapear {
+            to {
+                scale: 1;
+                opacity: 98%;
+            }
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* media_queries*/
+        @media (min-width:296px)and (max-width:480px) {
+            .nav_header {
+                font-size: 10px;
+            }
+
+            .parragraph {
+                font-size: 10px;
+            }
+
+        }
+
+        @media (min-width:481px)and (max-width:782px) {
+            .nav_header {
+                font-size: 15px;
+            }
+
+            .parragraph {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:783px)and (max-width:900px) {
+            .nav_header {
+                font-size: 16px;
+            }
+
+            .parragraph {
+                font-size: 19px;
+            }
+
+        }
+
+        @media (min-width:901px)and (max-width:1000px) {
+            .nav_header {
+                font-size: 17px;
+            }
+
+            .parragraph {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width:1001px)and (max-width:1750px) {
+            .nav_header {
+                font-size: 17px;
+            }
+
+            .parragraph {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width:1751px)and (max-width:2000px) {
+            .nav_header {
+                font-size: 18px;
+            }
+
+            .parragraph {
+                font-size: 23px;
+            }
+        }
+
+        @media (min-width:2000px)and (max-width:3000px) {
+            .nav_header {
+                font-size: 18px;
+            }
+
+            .parragraph {
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width:3001px)and (max-width:3486px) {
+            .nav_header {
+                font-size: 20px;
+            }
+
+            .parragraph {
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width:3487px)and (max-width:8000px) {
+            .nav_header {
+                font-size: 20px;
+            }
+
+            .parragraph {
+                font-size: 24px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"> <img src="images/logo.png" alt="" class="logo"> </a>
+
+        <nav class="nav_header"> <!--menu links-->
+            <ul>
+                <li><a href="index.html">
+                        <img src="images/ikons/hus_ikon.png" alt="" class="hus_ikon"></a>
+                </li>
+                <li><a href="program_side.html">kursus</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="Information">
+        <articles>
+            <h2> Hvad er TTT?</h2>
+            <p class="parragraph"> TTT er mere end bare en digital platform, det er en bevægelse, der handler om at
+                bringe mennesker
+                tættere sammen ved at dele ens historie i et trykt sted og skabe fællesskaber .
+                Vi ved, at der er flere, som gerne vil have en bedre mental sunhed.
+                Derfor har vi skabt et social samfund, hvor du kan få hjælp til at forholde dig til det, som du døjer
+                med.
+                Det kan være alt fra gruppe sessions, one to one session,telephoneopkalde og text-massaging.
+                Hos TTT tror vi på, at vi virkelig kan hjælpe med at fobedre din mental sunhed.
+            </p>
+
+            <img src="images/HVAD_ER_TTT.png" alt="" class="article_image first">
+        </articles>
+        <articles>
+            <h2> Vores hold </h2>
+            <p class="parragraph"> Bag TTT finder du et engageret team af erfarne terapeuter, kreative og venlige
+                ildsjæle.
+                Vi kommer med forskellige baggrunde inden for sikology,coaching,og kommunikation, men
+                vi er forenet af én fælles vision: at gøre det nemmere for unge at have det bedre med sig selv.
+
+                Vi arbejder tæt sammen med Aabenrra kommune, fordi vi tror på, at de små initiativer er med
+                til at forme de store fællesskaber.
+                Som team brænder vi for at bruge vores faglige viden og erfaring for at skabe et støttefællleskab,hvor
+                det vigtigst
+                af alt er at vi virkelig holder af dig.
+                TTT er ikke bare et studieprojekt. Det er en platform skabt for unge, med ambitionen om at
+                vokse sig større end os selv.</p>
+
+            <img src="images/TEAM.png" alt="" class="article_image second  ">
+        </articles>
+        <articles>
+            <h2> Vores mål</h2>
+            <p class="parragraph"> Vi ønsker at skabe et digitalt samlingspunkt, hvor unge mellem 16 og 25 år kan finde
+                assistance til at frigøre sig fra det, som er tungt i hjertet, ved at tale. Vi giver også værktøj til at
+                have det bedre med dem selves.
+                Vores mål er at gøre det enkelt og tilgængeligt at opdage et varmt sted, hvor mennesker har det fint til
+                at tale.
+                TTT skal være et sted, hvor man kan udvide sin omgangskreds, opdage fællesskaber og føle sig som en
+                del af noget større.
+
+                Vi ønsker at inspirere de unge at normalisere at passe på mental sunhed og søge hjælp, hvilket kan gør
+                en stor forskel in deres liv. </p>
+
+
+            <!--  <img src="img/team2.jpg" alt="" class="article_image third">  -->
+        </articles>
+    </div>
+
+
+
+</body>
+
+</html>

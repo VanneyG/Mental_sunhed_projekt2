@@ -10,7 +10,364 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css_files/index.css">
     <!-- <link rel="stylesheet" href="css_files/start.css">   -->
-    <link rel="stylesheet" href="css_files/login.css">
+
+    <STYLE>
+        .shared_box {
+            display: flex;
+            clear: both;
+
+        }
+
+        .logo {
+            width: auto;
+            float: left;
+            padding: 0;
+            margin-left: 0;
+
+        }
+
+        .hus_ikon {
+            height: 20px;
+        }
+
+        .image_text {
+            display: inline-block;
+
+        }
+
+        #p_text {
+            padding: 5px 20% 5px 20%;
+            font-family: 'Montserrat';
+        }
+
+
+        .image_text {
+
+            min-height: 450px;
+
+            width: 50%;
+            left: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation: slides 40s linear infinite;
+            /*  margin-top: 3%;*/
+            position: relative;
+            margin-bottom: 1%;
+            margin-right: 4px;
+        }
+
+
+
+        footer {
+
+
+            margin-top: 2%;
+
+        }
+
+
+
+
+        /*---------------------- sign up form */
+
+
+
+
+
+        .signup {
+
+            min-height: 400px;
+            background-color: white;
+
+            width: 50%;
+            flex-shrink: 1;
+            overflow: hidden;
+            background: #7d8e2e;
+            border-radius: 10px;
+            box-shadow: 5px 20px 50px #000;
+        }
+
+        label {
+            color: #fff;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            font-weight: bold;
+            cursor: pointer;
+
+
+        }
+
+        input {
+            width: 60%;
+            height: 25px;
+            background: #e0dede;
+            justify-content: center;
+            display: flex;
+            margin: 15px auto;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .buttom {
+            width: 60%;
+            height: 40px;
+            margin: 10px auto;
+            justify-content: center;
+            display: block;
+            color: #fff;
+            background: #4a268d;
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 20px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+
+
+        .buttom:hover {
+            background: #7849ce;
+            color: rgb(226, 209, 186);
+
+        }
+
+        a {
+            color: #e0dede;
+            text-decoration: none;
+        }
+
+
+        /*   content inhold queries ------------------------*/
+        /*
+@media (max-width:295px) {
+
+    .signup {
+
+        font-size: 16px;
+
+        width: 100%;
+
+
+
+    }
+
+    .image_text {
+        display: none;
+
+    }
+
+    .card {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    .signupbuttom:active {
+        .disapear_from_format {
+            display: none;
+        }
+    }
+
+}  */
+
+        @media (min-width:296px)and (max-width:480px) {
+
+
+            .signup {
+                flex-shrink: 1;
+                font-size: 13px;
+
+                width: 45%;
+                flex-grow: 1;
+                min-height: 500px;
+
+            }
+
+            .image_text {
+                width: 45%;
+                flex-grow: 1;
+            }
+
+
+
+            .card {
+                font-size: 12px;
+            }
+
+            footer {
+                height: 200px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+        }
+
+        @media (min-width:481x)and (max-width:782px) {
+
+            .signup {
+                min-height: 500px;
+                /* flex-shrink: 1;*/
+                font-size: 14px;
+
+                width: 45%;
+                flex-grow: 1;
+
+            }
+
+            .image_text {
+
+
+                width: 45%;
+                flex-grow: 1;
+            }
+
+            .image_text_p {
+                padding-top: 10px;
+                font-size: 12px;
+            }
+
+            .card {
+                font-size: 12px;
+            }
+
+            footer {
+                height: 200px;
+            }
+
+
+        }
+
+        @media (min-width:783px)and (max-width:2000px) {
+            .image_text {
+                font-size: 18px;
+                width: 60%;
+
+
+
+            }
+
+            .signup {
+
+                font-size: 150%;
+                padding: 4.5em;
+                width: 40%;
+                /* det virker ikke .hvorfor???????   */
+
+            }
+
+
+
+
+
+
+            nav {
+
+                font-size: 22px;
+            }
+
+
+
+
+            .ikon_image {
+                height: 110%;
+            }
+
+            .logo {
+                height: 180px;
+                width: 180px;
+            }
+        }
+
+        @media (min-width:901px)and (max-width:3000px) {
+            .signup {
+                width: 30%;
+                font-size: 100%;
+                padding: 1em;
+            }
+
+            .image_text {
+                font-size: 25px;
+                width: 70%;
+            }
+
+            nav {
+                font-size: 24px;
+            }
+
+            .card {
+                font-size: 24px;
+            }
+
+            .logo {
+                height: 200px;
+                width: 180px;
+            }
+        }
+
+        @media (min-width:3001px)and (max-width:5000px) {
+            .image_text {
+                font-size: 25px;
+                width: 60%;
+            }
+
+
+            .signup {
+                width: 30%;
+                font-size: 200%;
+                padding: 2em;
+            }
+
+
+            nav {
+                font-size: 24px;
+            }
+
+            .card {
+                font-size: 24px;
+            }
+
+            .logo {
+                height: 200px;
+                width: 180px;
+            }
+        }
+
+        @media (min-width:5001px) {
+            .signup {
+                width: 35%;
+                font-size: 200%;
+                padding: 11em;
+            }
+
+            .image_text {
+                font-size: 25px;
+                width: 90%;
+            }
+
+            nav {
+                font-size: 24px;
+            }
+
+            .card {
+                font-size: 24px;
+            }
+
+            .logo {
+                height: 200px;
+                width: 180px;
+            }
+        }
+    </STYLE>
 
 </head>
 
