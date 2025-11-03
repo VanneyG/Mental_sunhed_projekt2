@@ -72,16 +72,16 @@
         }
 
         /* la otra seccion aparte de header */
-        .contenedor_content {
+        /*   .contenedor_content {
             display: flex;
             flex-direction: row;
             height: 100%;
-
-        }
+            width: 100%
+        } */
 
         .courses_and_others_box {
 
-            /* justify-content: center; */
+
             height: 100%;
             width: 100%;
             /* es importante poner el width al 100%, para que agarre lo restante */
@@ -92,7 +92,7 @@
         }
 
         .courses_and_others_box h2 {
-            color: white;
+
             padding: 20px 0 20px 35%;
         }
 
@@ -100,41 +100,41 @@
         /* a declarar las 3 secciones */
 
         .only_courses {
-            /* flex-grow: 1; */
+            flex-grow: 1;
             /* para que tome todo el espacio */
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            /* min-height: 2000px; */
-
             background-image: url(images/background_color.png);
-            margin-bottom: 50px;
+            margin-bottom: 70px;
             overflow-x: hidden;
+            width: 100%;
 
         }
 
         .box_image_couse {
-            flex-grow: 1;
+
             display: flex;
             flex-wrap: wrap;
+            flex-shrink: 1;
             width: 200px;
             height: 300px;
             background-color: pink;
-            padding: 30px;
+            padding: 15px;
             flex-grow: 1;
             margin-bottom: 25px;
             /* flex-box,para que agarre el campo restante */
             border-radius: 25px;
             margin-right: 15px;
+            margin-left: 15px;
         }
 
 
         .image_courses {
             flex-grow: 1;
-            height: 200px;
             width: 160px;
-            /* width: 300px; */
-            /* height: auto; */
+            height: 200px;
+
             border-radius: 20px;
 
 
@@ -265,13 +265,34 @@
         }
 
         /* media queries */
-        @media (min-width:296px)and (max-width:480px) {
+        @media (min-width:300px)and (max-width:480px) {
+
+
+            .box_image_couse {
+                width: 270px;
+
+                height: 350px;
+
+            }
+
+
+            .image_courses {
+
+                width: 230px;
+                height: 300px;
+
+
+            }
+
             .second_links {
                 font-size: 12px;
 
             }
 
+
         }
+
+        /*
 
         @media (min-width:481px)and (max-width:782px) {
             .image_courses_text {
@@ -530,7 +551,7 @@
             }
 
 
-        }
+        }      */
     </STYLE>
 
 </head>
@@ -556,110 +577,108 @@
                 </ul>
             </nav>
         </header>
-        <div class="contenedor_content">
+        <!--  <div class="contenedor_content">   -->
 
-            <section class="courses_and_others_box">
-                <h2 id="inside_link1">What is causing you angs ?</h2>
-                <section class="only_courses">
+        <section class="courses_and_others_box">
+            <h2 id="inside_link1">What is causing you angs ?</h2>
+            <section class="only_courses">
 
-                    <div class=" box_image_couse">
-                        <img src="images/family_struggles.jpg" alt="" class="image_courses">
-                        <p class="image_courses_text"> Vi snakker om udfordringer, vi forholder os til angående vores
-                            familier i et trykt sted.</p>
-                        <button> Book en tid</button>
+                <div class=" box_image_couse">
+                    <img src="images/family_struggles.jpg" alt="" class="image_courses">
+                    <p class="image_courses_text"> Vi snakker om udfordringer, vi forholder os til angående vores
+                        familier i et trykt sted.</p>
+                    <button> Book en tid</button>
+                </div>
+                <div class=" box_image_couse"> <img src="images/Self-Esteem- issues.jpg" alt="" class="image_courses">
+                    <p class="image_courses_text"> Vi snakker om udfordringer, vi forholder os til angående vores
+                        familier i et trykt sted.</p>
+                    <button> Book en tid</button>
+                </div>
+
+                <div class=" box_image_couse"> <img src="images/discrimination.png" alt="" class="image_courses">
+                    <p class="image_courses_text"> Vi snakker om diskrimination og hvordan det går ud over vores liv
+                    </p>
+                    <button> Book en tid</button>
+                </div>
+
+                <div class=" box_image_couse"> <img src="images/bully.jpg" alt="" class="image_courses">
+                    <p class="image_courses_text"> Vi snakker om chikaneri og hvad vi kan gøre for at det stopper.
+                    </p>
+                    <button> Book en tid</button>
+                </div>
+                <div class=" box_image_couse"> <img src="images/loneliness.jpeg" alt="" class="image_courses">
+                    <p class="image_courses_text"> Gruppen gælder alle som føler sig ensomme, og ønsker at
+                        hygge-snakke med andre i et trykt
+                        sted .</p>
+                    <button> Book en tid</button>
+                </div>
+
+                <div class=" box_image_couse"> <img src="images/one to one_therapy.jpeg" alt="" class="image_courses">
+                    <p class="image_courses_text"> one to one videopkald eller telephoneopkald.</p>
+                    <button class="button"> Book en tid</button>
+                </div>
+                <h2 id="tools_section">Værktøj</h2>
+
+                <section class="tools_only">
+
+                    <div>
+                        <h5>first video</h5>
+                        <iframe width="632" height="240" src="https://www.youtube-nocookie.com/embed/JGD_CF3nbzE"
+                            title="Hypnose: &quot;Livsglæde - Slip Angst, Stress, Depression&quot;. Gratis smugkig i HypnoStreaming.dk"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
                     </div>
-                    <div class=" box_image_couse"> <img src="images/Self-Esteem- issues.jpg" alt=""
-                            class="image_courses">
-                        <p class="image_courses_text"> Vi snakker om udfordringer, vi forholder os til angående vores
-                            familier i et trykt sted.</p>
-                        <button> Book en tid</button>
+                    <div>
+                        <h5>second video</h5>
+                        <video src="https://www.youtube.com/watch?v=uFuCdGiDn2U" controls></video>
                     </div>
-
-                    <div class=" box_image_couse"> <img src="images/discrimination.png" alt="" class="image_courses">
-                        <p class="image_courses_text"> Vi snakker om diskrimination og hvordan det går ud over vores liv
-                        </p>
-                        <button> Book en tid</button>
+                    <div>
+                        <h5>fourth video</h5>
+                        <video src="https://www.youtube.com/watch?v=JGD_CF3nbzE" controls></video>
                     </div>
-
-                    <div class=" box_image_couse"> <img src="images/bully.jpg" alt="" class="image_courses">
-                        <p class="image_courses_text"> Vi snakker om chikaneri og hvad vi kan gøre for at det stopper.
-                        </p>
-                        <button> Book en tid</button>
+                    <div>
+                        <h5>fifth video</h5>
+                        <video src="https://www.youtube.com/watch?v=CDFxLsF4d4Q" controls></video>
                     </div>
-                    <div class=" box_image_couse"> <img src="images/loneliness.jpeg" alt="" class="image_courses">
-                        <p class="image_courses_text"> Gruppen gælder alle som føler sig ensomme, og ønsker at
-                            hygge-snakke med andre i et trykt
-                            sted .</p>
-                        <button> Book en tid</button>
-                    </div>
-
-                    <div class=" box_image_couse"> <img src="images/one to one_therapy.jpeg" alt=""
-                            class="image_courses">
-                        <p class="image_courses_text"> one to one videopkald eller telephoneopkald.</p>
-                        <button class="button"> Book en tid</button>
-                    </div>
-                    <h2 id="tools_section">Værktøj</h2>
-
-                    <section class="tools_only">
-
-                        <div>
-                            <h5>first video</h5>
-                            <iframe width="632" height="240" src="https://www.youtube-nocookie.com/embed/JGD_CF3nbzE"
-                                title="Hypnose: &quot;Livsglæde - Slip Angst, Stress, Depression&quot;. Gratis smugkig i HypnoStreaming.dk"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                        </div>
-                        <div>
-                            <h5>second video</h5>
-                            <video src="https://www.youtube.com/watch?v=uFuCdGiDn2U" controls></video>
-                        </div>
-                        <div>
-                            <h5>fourth video</h5>
-                            <video src="https://www.youtube.com/watch?v=JGD_CF3nbzE" controls></video>
-                        </div>
-                        <div>
-                            <h5>fifth video</h5>
-                            <video src="https://www.youtube.com/watch?v=CDFxLsF4d4Q" controls></video>
-                        </div>
-                    </section>
-
                 </section>
-                <!--footer, sidste part of my hjemmeside-->
-                <footer>
-                    <div id="phone_openhours">
-                        <table>
-                            <caption>PHONE ÅBNINGSTIDER</caption>
-                            <TR id="dage">
-                                <td>Man-Tors</td>
-                                <td>Fre-Lør</td>
-                                <td>Søn</td>
-                            </TR>
-                            <tr id="time">
-                                <td>9.00 - 20.00</td>
-                                <td>9.00 - 16.00</td>
-                                <td>11.00 - 16.00</td>
-                            </tr>
-
-                        </table>
-                    </div>
-
-                    <div id="ikons_section">
-
-
-                        <h5 id="ikons_section_findos_text_footer"> Find os også </h5>
-                        <img src="images/ikons/facebookicon.png" alt="facebook" class="ikon_image_footer">
-                        <img src="images/ikons/instagramicon.png" alt="instagram" class="ikon_image_footer">
-                        <img src="images/ikons/twittericon.png" alt="twitter" class="ikon_image_footer">
-                    </div>
-
-                </footer>
 
             </section>
-        </div>
+            <!--footer, sidste part of my hjemmeside-->
+            <footer>
+                <div id="phone_openhours">
+                    <table>
+                        <caption>PHONE ÅBNINGSTIDER</caption>
+                        <TR id="dage">
+                            <td>Man-Tors</td>
+                            <td>Fre-Lør</td>
+                            <td>Søn</td>
+                        </TR>
+                        <tr id="time">
+                            <td>9.00 - 20.00</td>
+                            <td>9.00 - 16.00</td>
+                            <td>11.00 - 16.00</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div id="ikons_section">
+
+
+                    <h5 id="ikons_section_findos_text_footer"> Find os også </h5>
+                    <img src="images/ikons/facebookicon.png" alt="facebook" class="ikon_image_footer">
+                    <img src="images/ikons/instagramicon.png" alt="instagram" class="ikon_image_footer">
+                    <img src="images/ikons/twittericon.png" alt="twitter" class="ikon_image_footer">
+                </div>
+
+            </footer>
+
+        </section>
     </div>
+    <!--   </div>  -->
 </body>
 
 </html>

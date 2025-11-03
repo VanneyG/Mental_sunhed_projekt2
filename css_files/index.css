@@ -322,8 +322,8 @@
      /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
   que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
      height: 12em;
-     background-color: #7d8e2e;
-     ;
+     background-color: rgb(125, 142, 46, 0.9);
+
      /* COLOR TARJETA*/
      padding: 1em;
      /* marco  delgado que puede agrandarse_ da paso entre el background y la imagen */
@@ -336,6 +336,7 @@
      font-family: 'montserrat';
 
      font-size: 12px;
+     color: rgb(224, 219, 218);
  }
 
  /*-----------------------------------------------------------*/
@@ -392,7 +393,7 @@
  footer th,
  footer td {
      text-align: left;
-     font-family: 13px;
+     font-family: 12px;
      flex-grow: 1;
 
 
