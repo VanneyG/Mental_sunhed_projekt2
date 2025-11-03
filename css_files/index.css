@@ -6,7 +6,7 @@
 
  .main {
      min-height: 1000px;
-     /* background-color: #0f488a;*/
+     background-color: rgb(66, 66, 248);
      background-image: url(../images/background_color.png);
      font-family: 'montserrat';
      color: #fdf9ef;
