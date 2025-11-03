@@ -29,7 +29,7 @@
             position: relative;
             height: 110px;
             font-weight: 500;
-            background-color: rgb(168, 127, 255);
+            background-image: url(images/background_color.png);
 
         }
 
@@ -93,7 +93,8 @@
 
         .courses_and_others_box h2 {
 
-            padding: 20px 0 20px 35%;
+            padding: 20px 0 30px 35%;
+            font-size: 16px;
         }
 
         /* Esta caja tendra 3 secciones    */
@@ -106,10 +107,11 @@
             flex-wrap: wrap;
             flex-direction: row;
             background-image: url(images/background_color.png);
-            margin-bottom: 70px;
+            margin-bottom: 50px;
             overflow-x: hidden;
             width: 100%;
             /* importante colocar width:100% */
+            align-content: space-around;
 
         }
 
@@ -120,7 +122,7 @@
             flex-shrink: 1;
             width: 300px;
             height: 400px;
-            background-color: pink;
+            background-color: rgb(125, 142, 46, 0.9);
             padding: 15px;
             flex-grow: 1;
             margin-bottom: 25px;
@@ -143,20 +145,39 @@
 
         #tools_section {
             margin-bottom: 10px;
+            font-size: 16px;
+            padding-left: 40%;
+
+
         }
 
         .tools_only {
             flex-grow: 1;
-            min-height: 30%;
+            min-height: 35%;
             width: 100%;
             flex-shrink: 1;
             display: flex;
             flex-wrap: wrap;
+            align-content: space-around;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .videos_in_toolsonly {
+            padding: 15px;
+            flex-grow: 1;
+
+
+
+
         }
 
 
+        /*----------*/
+
         footer {
 
+            margin-top: 30px;
             background-color: aqua;
             display: flex;
             flex-grow: 1;
@@ -164,8 +185,12 @@
         }
 
         button {
-            height: 35px;
+            height: 50px;
+            width: 100px;
             border-radius: 10px;
+            font-weight: 500;
+            color: white;
+            background-color: rgb(158, 70, 240);
         }
 
         /*  footer */
@@ -182,6 +207,8 @@
             /* pone los elementos al centro de footer*/
             flex-wrap: wrap;
 
+
+
         }
 
         footer table {
@@ -190,7 +217,7 @@
 
 
             min-height: 50px;
-
+            padding-bottom: 30px;
 
         }
 
@@ -559,6 +586,7 @@
 
                 </ul>
             </nav>
+
         </header>
         <!--  <div class="contenedor_content">   -->
 
@@ -600,35 +628,82 @@
                     <p class="image_courses_text"> one to one videopkald eller telephoneopkald.</p>
                     <button class="button"> Book en tid</button>
                 </div>
-                <h2 id="tools_section">Værktøj</h2>
-
-                <section class="tools_only">
-
-                    <div>
-                        <h5>first video</h5>
-                        <iframe width="632" height="240" src="https://www.youtube-nocookie.com/embed/JGD_CF3nbzE"
-                            title="Hypnose: &quot;Livsglæde - Slip Angst, Stress, Depression&quot;. Gratis smugkig i HypnoStreaming.dk"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                    </div>
-                    <div>
-                        <h5>second video</h5>
-                        <video src="https://www.youtube.com/watch?v=uFuCdGiDn2U" controls></video>
-                    </div>
-                    <div>
-                        <h5>fourth video</h5>
-                        <video src="https://www.youtube.com/watch?v=JGD_CF3nbzE" controls></video>
-                    </div>
-                    <div>
-                        <h5>fifth video</h5>
-                        <video src="https://www.youtube.com/watch?v=CDFxLsF4d4Q" controls></video>
-                    </div>
-                </section>
-
             </section>
+
+
+
+
+
+
+            <h2 id="tools_section">Værktøj</h2>
+
+            <section class="tools_only">
+
+                <div class="videos_in_toolsonly">
+                    <h5>first video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/JGD_CF3nbzE"
+                        title="Hypnose: &quot;Livsglæde - Slip Angst, Stress, Depression&quot;. Gratis smugkig i HypnoStreaming.dk"
+                        frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe_video"></iframe>
+
+
+                </div>
+                <div class="videos_in_toolsonly">
+                    <h5>second video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/uFuCdGiDn2U"
+                        title="Cykling Uden Alder. ABC for mental sundhed 2015 #2" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                <div class="videos_in_toolsonly">
+                    <h5>fourth video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/CDFxLsF4d4Q"
+                        title="Nervous System Reset | 1 hour handpan meditation | Malte Marten" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                <div class="videos_in_toolsonly">
+                    <h5>fifth video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/YAwqvrDRg4o"
+                        title="Pernille fik en depression som 16-årig: Jeg troede at jeg skulle have skældud - DR Nyheder"
+                        frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                </div>
+
+                <div class="videos_in_toolsonly">
+                    <h5>fifth video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/lQhpetkwWnM"
+                        title="Mental Health Minute: Depression" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+
+                <div class="videos_in_toolsonly">
+                    <h5>fifth video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/11FVgQ_ULsk"
+                        title="Ærlige unge: Sådan føles angst" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                <div class="videos_in_toolsonly">
+                    <h5>fifth video</h5>
+                    <iframe width="350" height="218.75" src="https://www.youtube-nocookie.com/embed/t2STNwDjQfY"
+                        title="Derfor er depression alvorligt" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+            </section>
+
+
             <!--footer, sidste part of my hjemmeside-->
             <footer>
                 <div id="phone_openhours">
