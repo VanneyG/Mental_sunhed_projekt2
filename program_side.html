@@ -27,7 +27,7 @@
 
         header {
             position: relative;
-            height: 100px;
+            height: 110px;
             font-weight: 500;
             background-color: rgb(168, 127, 255);
 
@@ -47,7 +47,7 @@
         .nav_header {
             position: absolute;
             right: 15px;
-            bottom: 20px;
+            bottom: 10px;
             display: flex;
             flex-wrap: wrap;
         }
@@ -76,41 +76,9 @@
             display: flex;
             flex-direction: row;
             height: 100%;
-            /*   background-color: rgb(137, 34, 130);*/
 
         }
 
-        /* ahora, las 2 cajas dentro de el contenedor.cajas principales */
-        .links_aside_box {
-            margin-top: 50px;
-            margin-left: 3%;
-            margin-right: 3%;
-            /* min-width: 100px; */
-            height: 100%;
-            flex-basis: 25%;
-
-        }
-
-        .second_links ul {
-
-
-            display: block;
-            padding-bottom: 20px;
-
-            list-style: none;
-
-
-        }
-
-        .second_links ul li {
-            padding-bottom: 15px;
-
-
-        }
-
-
-
-        /* eso fue la primera caja de los links al lado */
         .courses_and_others_box {
 
             /* justify-content: center; */
@@ -121,6 +89,11 @@
             flex-wrap: wrap;
 
             flex-direction: column;
+        }
+
+        .courses_and_others_box h2 {
+            color: white;
+            padding: 20px 0 20px 35%;
         }
 
         /* Esta caja tendra 3 secciones    */
@@ -134,7 +107,7 @@
             flex-direction: row;
             /* min-height: 2000px; */
 
-            background-image: url(../images/background_color.png);
+            background-image: url(images/background_color.png);
             margin-bottom: 50px;
             overflow-x: hidden;
 
@@ -167,13 +140,19 @@
 
         }
 
+        #tools_section {
+            margin-bottom: 10px;
+        }
+
         .tools_only {
             flex-grow: 1;
-            min-height: 25%;
+            min-height: 30%;
+            width: 100%;
             flex-shrink: 1;
             display: flex;
             flex-wrap: wrap;
         }
+
 
         footer {
 
@@ -186,6 +165,103 @@
         button {
             height: 35px;
             border-radius: 10px;
+        }
+
+        /*  footer */
+
+        footer {
+            /* background-color: rgb(199, 236, 243);*/
+            min-height: 80px;
+            margin-top: -70px;
+            position: relative;
+            /* para centrar los ikons de footer*/
+            display: flex;
+            justify-content: flex-start;
+            /* align-content: center; */
+            /* pone los elementos al centro de footer*/
+            flex-wrap: wrap;
+
+        }
+
+        footer table {
+            padding-left: 20px;
+            border-collapse: separate;
+
+
+            min-height: 50px;
+
+
+        }
+
+        footer th,
+        footer td {
+            text-align: left;
+            font-family: 13px;
+            flex-grow: 1;
+
+
+        }
+
+
+        table caption {
+            padding-top: 15%;
+            /* no coloco el padding-top en table, porque daria un espacio entre caption y el contenido de table (dage, timer)*/
+            font-weight: 500;
+
+
+        }
+
+        footer td:nth-child(1) {
+
+            padding-right: 30px;
+
+
+        }
+
+        footer td:nth-child(2) {
+            padding-right: 30px;
+
+        }
+
+        #dage {
+            font-weight: 500;
+
+
+
+
+        }
+
+        #time {
+            font-size: 12px;
+            flex-shrink: 1;
+        }
+
+
+        #ikons_section {
+
+            gap: 8px;
+            position: absolute;
+            right: 3%;
+            top: 25%;
+        }
+
+
+        .ikon_image_footer {
+            /* flex-grow: 1;*/
+            height: 25px;
+            padding-right: 5px;
+            display: inline-block;
+
+
+
+        }
+
+
+
+        #ikons_section_findos_text_footer {
+            padding-top: 100px;
+            flex-grow: 1;
+
         }
 
         /* media queries */
@@ -469,24 +545,21 @@
             <nav class="nav_header">
                 <ul>
                     <li><a href="index.html"><img src="images/ikons/hus_ikon.png" class="hus_ikon" alt=""></a></li>
-                    <li><a class="a_links" href="mere_om_os.html"> MERE OM OS </a> </li>
+
+                    <li> <a href="#inside_link1">kursus</a></li>
+                    <li><a href=" #tools_section ">Værktøj</a></li>
+                    <li><a href="#phone_openhours">Kontakt os</a></li>
+                    <li><a class="a_links" href="mere_om_os.html"> Mere om os </a> </li>
+
 
 
                 </ul>
             </nav>
         </header>
         <div class="contenedor_content">
-            <section class="links_aside_box">
-                <nav class="second_links">
-                    <ul>
-                        <li> <a href="#">kursus</a></li>
-                        <li><a href="#">Værktøj</a></li>
-                        <li><a href="#">Kontakt os</a></li>
-                    </ul>
-                </nav>
-            </section>
+
             <section class="courses_and_others_box">
-                <h2>What is causing you angs ?</h2>
+                <h2 id="inside_link1">What is causing you angs ?</h2>
                 <section class="only_courses">
 
                     <div class=" box_image_couse">
@@ -525,16 +598,35 @@
                         <p class="image_courses_text"> one to one videopkald eller telephoneopkald.</p>
                         <button class="button"> Book en tid</button>
                     </div>
+                    <h2 id="tools_section">Værktøj</h2>
+
+                    <section class="tools_only">
+
+                        <div>
+                            <h5>first video</h5>
+                            <iframe width="632" height="240" src="https://www.youtube-nocookie.com/embed/JGD_CF3nbzE"
+                                title="Hypnose: &quot;Livsglæde - Slip Angst, Stress, Depression&quot;. Gratis smugkig i HypnoStreaming.dk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                        </div>
+                        <div>
+                            <h5>second video</h5>
+                            <video src="https://www.youtube.com/watch?v=uFuCdGiDn2U" controls></video>
+                        </div>
+                        <div>
+                            <h5>fourth video</h5>
+                            <video src="https://www.youtube.com/watch?v=JGD_CF3nbzE" controls></video>
+                        </div>
+                        <div>
+                            <h5>fifth video</h5>
+                            <video src="https://www.youtube.com/watch?v=CDFxLsF4d4Q" controls></video>
+                        </div>
+                    </section>
 
                 </section>
-                <div class="tools_only">
-                    <video src="https://www.youtube.com/watch?v=8g_wMy2zeTk" controls></video>
-                    <video src="https://www.youtube.com/watch?v=uFuCdGiDn2U" controls></video>
-                    <audio src="https://www.youtube.com/watch?v=JGD_CF3nbzE"></audio>
-                    <audio src="https://www.youtube.com/watch?v=CDFxLsF4d4Q"></audio>
-                </div>
-
-
                 <!--footer, sidste part of my hjemmeside-->
                 <footer>
                     <div id="phone_openhours">
