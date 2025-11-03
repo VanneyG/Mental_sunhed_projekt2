@@ -109,6 +109,7 @@
             margin-bottom: 70px;
             overflow-x: hidden;
             width: 100%;
+            /* importante colocar width:100% */
 
         }
 
@@ -117,8 +118,8 @@
             display: flex;
             flex-wrap: wrap;
             flex-shrink: 1;
-            width: 200px;
-            height: 300px;
+            width: 300px;
+            height: 400px;
             background-color: pink;
             padding: 15px;
             flex-grow: 1;
@@ -132,8 +133,8 @@
 
         .image_courses {
             flex-grow: 1;
-            width: 160px;
-            height: 200px;
+            width: 250px;
+            height: 230px;
 
             border-radius: 20px;
 
@@ -265,36 +266,10 @@
         }
 
         /* media queries */
-        @media (min-width:300px)and (max-width:480px) {
 
 
-            .box_image_couse {
-                width: 270px;
 
-                height: 350px;
-
-            }
-
-
-            .image_courses {
-
-                width: 230px;
-                height: 300px;
-
-
-            }
-
-            .second_links {
-                font-size: 12px;
-
-            }
-
-
-        }
-
-        /*
-
-        @media (min-width:481px)and (max-width:782px) {
+        @media (min-width:481px)and (max-width:750px) {
             .image_courses_text {
                 font-size: 15px;
             }
@@ -305,27 +280,31 @@
 
             }
 
-            .second_links {
-                font-size: 20px;
 
-            }
 
             .box_image_couse {
-
                 width: 300px;
-                height: 380px;
 
+                height: 400px;
 
             }
+
 
             .image_courses {
-                width: 270px;
-                height: 300px;
+
+                width: 280px;
+                height: 320px;
+
 
             }
+
+
+
+
         }
 
-        @media (min-width:783px)and (max-width:900px) {
+
+        @media (min-width:751px)and (max-width:900px) {
             button {
                 height: 40px;
             }
@@ -340,35 +319,37 @@
 
             }
 
-            .second_links {
-                font-size: 18px;
 
-            }
 
             .box_image_couse {
-
                 width: 300px;
-                height: 370px;
 
+                height: 420px;
 
             }
+
 
             .image_courses {
-                width: 270px;
-                height: 300px;
+
+                width: 250px;
+                height: 320px;
+
 
             }
+
 
         }
 
-        @media (min-width:901px)and (max-width:1000px) {
+
+
+        @media (min-width:901px)and (max-width:3000px) {
             button {
                 height: 40px;
             }
 
             .logo {
 
-                height: 90px;
+                height: 80px;
 
             }
 
@@ -383,18 +364,20 @@
 
             .box_image_couse {
 
-                width: 300px;
-                height: 390px;
+                width: 380px;
+                height: 450px;
 
 
             }
 
             .image_courses {
-                width: 270px;
-                height: 300px;
+                width: 300px;
+                height: 350px;
 
             }
         }
+
+        /*
 
         @media (min-width:1001px)and (max-width:1750px) {
             button {
