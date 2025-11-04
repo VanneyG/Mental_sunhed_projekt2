@@ -226,7 +226,7 @@
 
  /*------------------------------------------*/
  .a_links:hover {
-     background-color: azure;
+     background-color: rgb(194, 81, 47, 0.7);
      text-shadow: .4px .4px grey;
  }
 
