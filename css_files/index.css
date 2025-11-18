@@ -67,7 +67,7 @@
 
  /*-------------------------------------*/
  .flere_backgrounds_animation {
-     min-height: 350px;
+     min-height: 600px;
      width: 100%;
      background-size: cover;
      background-repeat: no-repeat;
@@ -468,9 +468,7 @@
          width: 70px;
      }
 
-     .flere_backgrounds_animation {
-         max-height: 320px
-     }
+
 
      .image_text {
          font-size: 12px;
@@ -526,11 +524,11 @@
      }
 
      .flere_backgrounds_animation {
-         height: 500px
+         height: 700px
      }
 
      .image_text {
-         font-size: 20px;
+         font-size: 12px;
      }
 
      .card {
@@ -551,7 +549,7 @@
      }
 
      .image_text {
-         font-size: 25px;
+         font-size: 12px;
      }
 
      #ikons_section {

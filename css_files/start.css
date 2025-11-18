@@ -5,6 +5,7 @@
      display: flex;
      clear: both;
 
+
  }
 
  .logo {
@@ -47,17 +48,12 @@
      margin-right: 4px;
  }
 
-
-
  footer {
 
 
      margin-top: 2%;
 
  }
-
-
-
 
  /*---------------------- sign up form */
 
@@ -67,7 +63,8 @@
 
  .signup {
 
-     height: 100%;
+     /*  height: 100%;  */
+     min-height: 600px;
      background-color: white;
 
      width: 50%;
@@ -92,18 +89,18 @@
 
  input {
      width: 60%;
-     height: 25px;
+     height: 30px;
      background: #e0dede;
      justify-content: center;
      display: flex;
-     margin: 15px auto;
+     margin: 20px auto;
      padding: 8px;
      border: none;
      border-radius: 5px;
  }
 
  .buttom {
-     width: 60%;
+     width: 62%;
      height: 40px;
      margin: 10px auto;
      justify-content: center;
@@ -170,15 +167,7 @@
  @media (min-width:296px)and (max-width:475px) {
 
 
-     /* .signup {
-         flex-shrink: 1;
-         font-size: 13px;
 
-         width: 45%;
-         flex-grow: 1;
-
-     }
-*/
      .signup {
 
          font-size: 16px;
@@ -282,7 +271,7 @@
 
 
      .ikon_image {
-         height: 110%;
+         height: 80%;
      }
 
      .logo {
