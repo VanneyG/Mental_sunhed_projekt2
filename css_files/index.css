@@ -6,8 +6,8 @@
 
  .main {
      min-height: 1000px;
-     background-color: rgb(66, 66, 248);
-     background-image: url(../images/background_color.png);
+     background-color: #0d1d2b;
+     /* background-image: url(../images/background_color.png);*/
      font-family: 'montserrat';
      color: #fdf9ef;
      border-radius: 20px;
@@ -322,7 +322,7 @@
      /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
   que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
      height: 12em;
-     background-color: #55611F;
+     background-color: #023d4f;
 
      /* COLOR TARJETA*/
      padding: 1em;
