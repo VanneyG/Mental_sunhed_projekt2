@@ -331,7 +331,7 @@
      /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
   que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
      height: 12em;
-     background-color: rgba(54, 54, 14, 0.8);
+     background-color: rgba(25, 54, 41, 0.8);
      background-image: url(../images/equilibrio.jpg);
      background-blend-mode: multiply;
 
