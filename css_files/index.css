@@ -26,8 +26,8 @@
  }
 
  .logo {
-     width: 140px;
-     height: 100px;
+     width: 95px;
+     height: 80px;
      float: left;
      padding: .3em 0 0 1em;
  }
@@ -47,6 +47,8 @@
  ul li a {
      text-decoration: none;
      color: #fdf9ef;
+     padding-left: 15px;
+
 
  }
 
@@ -106,13 +108,20 @@
      top: 4%;
      left: 5%;
      font-family: 'montserrat extrabold';
-     font-size: 24px;
+
 
 
  }
 
- .image_text_p {
-     font-size: 24px;
+
+ .image_text p {
+     font-size: 19px;
+     color: #f7f6f3;
+     font-weight: 400;
+     text-shadow: #69615e .5px .5px;
+     line-height: 20px;
+     font-style: italic;
+
  }
 
  /*--------------------making the text disappear by using opacity*/
@@ -322,7 +331,9 @@
      /*flex positiona las tarjetas dando un ancho de 20, causando un overflow
   que automaticamente genera un scrollbar, por eso debimos desactivar el scrollbar arriba */
      height: 12em;
-     background-color: #023d4f;
+     background-color: rgba(54, 54, 14, 0.8);
+     background-image: url(../images/equilibrio.jpg);
+     background-blend-mode: multiply;
 
      /* COLOR TARJETA*/
      padding: 1em;
@@ -462,16 +473,32 @@
  }
 
  /*   content inhold ------------------------*/
- @media (max-width:960px) {
+
+ @media (max-width:500px) {
      .logo {
-         height: 70px;
-         width: 70px;
+         height: 55px;
+         width: 65px;
      }
 
 
 
-     .image_text {
-         font-size: 12px;
+     .card {
+         font-size: 10px;
+     }
+
+     footer {
+         min-height: 200px;
+     }
+
+ }
+
+ @media (min-width:501px)and(max-width:960px) {
+
+
+     .logo {
+         width: 80px;
+         height: 80px;
+
      }
 
      .card {
@@ -482,6 +509,11 @@
          min-height: 200px;
      }
 
+     .image_text p {
+         font-size: 25px;
+
+
+     }
 
  }
 
@@ -527,9 +559,7 @@
          height: 700px
      }
 
-     .image_text {
-         font-size: 12px;
-     }
+
 
      .card {
          font-size: 20px;
@@ -540,17 +570,27 @@
          font-size: 120%;
      }
 
+     .image_text p {
+         font-size: 25px;
+
+
+     }
+
+
+
 
  }
 
  @media (min-width:2001px)and (max-width:5000px) {
+     .main {
+         font-size: 20px;
+     }
+
      table {
          font-size: 130%;
      }
 
-     .image_text {
-         font-size: 12px;
-     }
+
 
      #ikons_section {
 
@@ -570,4 +610,11 @@
      #phone_openhours {
          font-size: 140%;
      }
+
+     .image_text p {
+         font-size: 29px;
+
+
+     }
+
  }

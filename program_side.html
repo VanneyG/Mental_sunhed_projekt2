@@ -23,6 +23,7 @@
             background-color: rgb(9, 11, 15, 0.7);
             overflow-x: hidden;
             font-size: 12px;
+            font-family: 'montserrat';
         }
 
         header {
@@ -45,7 +46,7 @@
 
         .nav_header {
             position: absolute;
-            right: 15px;
+            right: 10px;
             bottom: 10px;
             display: flex;
             flex-wrap: wrap;
@@ -60,7 +61,7 @@
         }
 
         .nav_header ul li {
-            padding-right: 10px;
+            padding-left: 12px;
         }
 
         .a_links:hover {
@@ -71,12 +72,13 @@
         ul li a {
             text-decoration: none;
             color: #fdf9ef;
+            font-size: 18px;
 
         }
 
         h2 {
-            line-height: 2em;
-            text-shadow: .5px .2px;
+            line-height: 1em;
+            text-shadow: .3px .2px;
             text-align: center;
         }
 
@@ -141,25 +143,42 @@
             border: solid .5px rgba(58, 57, 56, 0.7);
             padding: 7px;
             flex-grow: 1;
-            margin-bottom: 25px;
-            /* flex-box,para que agarre el campo restante */
+
             border-radius: 25px;
             margin-right: 15px;
             margin-left: 15px;
             color: white;
+            margin-bottom: 10PX;
         }
 
 
 
         .image_courses {
             flex-grow: 1;
-            /* width: 250px;
-            height: 230px; */
+
+
             width: 100px;
-            height: 180x;
+            height: 130px;
             border-radius: 20px;
 
 
+        }
+
+        H3 {
+            padding-bottom: 2PX;
+            WIDTH: 100%;
+            text-align: center;
+            padding-bottom: 10PX;
+            color: rgb(153, 114, 6);
+            font-weight: 1000;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        h4 {
+            width: 100%;
+            text-align: center;
         }
 
         #tools_section {
@@ -201,7 +220,7 @@
 
         .videos_in_toolsonly {
 
-            padding: 15px;
+            padding: 10px;
             flex-grow: 1;
 
 
@@ -213,6 +232,8 @@
             border-radius: 20px;
             border: solid 4px rgba(37, 37, 36, 0.7);
             object-fit: fill;
+            padding: 5px;
+
 
         }
 
@@ -361,7 +382,40 @@
 
 
         /* media queries */
+        @media (max-width:360px) {
 
+            ul li a {
+                font-size: 10px;
+
+            }
+
+            H3 {
+                font-size: 12PX;
+            }
+
+        }
+
+
+        @media (min-width:361px)and (max-width:480px) {
+
+            ul li a {
+                font-size: 12px;
+
+            }
+
+            .image_courses {
+
+
+
+                width: 100px;
+                height: 200px;
+
+
+
+            }
+
+
+        }
 
 
         @media (min-width:481px)and (max-width:750px) {
@@ -383,17 +437,6 @@
                 height: 200px;
 
             }
-
-
-            /*   .image_courses {
-
-                width: 280px;
-                height: 320px;
-
-
-            }  */
-
-
 
 
         }
@@ -419,7 +462,7 @@
             .box_image_couse {
                 width: 300px;
 
-                height: 420px;
+                height: 455px;
 
             }
 
@@ -429,6 +472,11 @@
                 width: 250px;
                 height: 320px;
 
+
+            }
+
+            ul li a {
+                font-size: 14px;
 
             }
 
@@ -461,7 +509,7 @@
             .box_image_couse {
 
                 width: 380px;
-                height: 450px;
+                height: 490px;
 
 
             }
@@ -469,6 +517,11 @@
             .image_courses {
                 width: 300px;
                 height: 350px;
+
+            }
+
+            ul li a {
+                font-size: 17px;
 
             }
         }
@@ -487,8 +540,8 @@
                 <ul>
                     <li><a href="index.html"><img src="images/ikons/hus_ikon.png" class="hus_ikon" alt=""></a></li>
 
-                    <li> <a class="a_links" href="#inside_link1">kursus</a></li>
-                    <li><a class="a_links" href=" #tools_section ">Værktøj</a></li>
+                    <li> <a class="a_links" href="#inside_link1">Sessioner</a></li>
+                    <li><a class="a_links" href=" #tools_section ">Resurser</a></li>
                     <li><a class="a_links" href="kontakt_formular.html">Kontakt os</a></li>
                     <li><a class="a_links" href="mere_om_os.html"> Mere om os </a> </li>
 
@@ -501,40 +554,48 @@
         <!--  <div class="contenedor_content">   -->
 
         <section class="courses_and_others_box">
-            <h2 id="inside_link1">Hvad har du brug for hjælp med ?</h2>
+            <h2 id="inside_link1">Sessioner</h2>
             <section class="only_courses">
 
                 <div class=" box_image_couse">
+                    <h3> FAMILIE PROBLEM GRUPPE SESSION</h3>
                     <img src="images/family_struggles.jpg" alt="" class="image_courses">
                     <p class="image_courses_text"> Vi snakker om udfordringer, vi forholder os til angående vores
                         familier i et trykt sted.</p>
                     <button> Book en tid</button>
                 </div>
-                <div class=" box_image_couse"> <img src="images/Self-Esteem- issues.jpg" alt="" class="image_courses">
+
+                <div class=" box_image_couse">
+                    <h3> SELV TILLID GRUPPE SESSION</h3>
+                    <img src="images/Self-Esteem- issues.jpg" alt="" class="image_courses">
                     <p class="image_courses_text"> Vi snakker om selv -tillid og trens angående samfundets udsende
                         forventninger. </p>
                     <button> Book en tid</button>
                 </div>
 
-                <div class=" box_image_couse"> <img src="images/discrimination.png" alt="" class="image_courses">
+                <div class=" box_image_couse">
+                    <h3> DISKRIMINATION</h3> <img src="images/discrimination.png" alt="" class="image_courses">
                     <p class="image_courses_text"> Vi snakker om diskrimination og hvordan det går ud over vores liv
                     </p>
                     <button> Book en tid</button>
                 </div>
 
-                <div class=" box_image_couse"> <img src="images/bully.jpg" alt="" class="image_courses">
+                <div class=" box_image_couse">
+                    <h3> MOBNING </h3><img src="images/bully.jpg" alt="" class="image_courses">
                     <p class="image_courses_text"> Vi snakker om chikaneri og hvad vi kan gøre for at det stopper.
                     </p>
                     <button> Book en tid</button>
                 </div>
-                <div class=" box_image_couse"> <img src="images/loneliness.jpeg" alt="" class="image_courses">
+                <div class=" box_image_couse">
+                    <h3> ENSOMHED</h3> <img src="images/loneliness.jpeg" alt="" class="image_courses">
                     <p class="image_courses_text"> Gruppen gælder alle som føler sig ensomme, og ønsker at
                         hygge-snakke med andre i et trykt
                         sted .</p>
                     <button> Book en tid</button>
                 </div>
 
-                <div class=" box_image_couse"> <img src="images/one to one_therapy.jpeg" alt="" class="image_courses">
+                <div class=" box_image_couse">
+                    <h3> INDIVIDUEL SESSION</h3><img src="images/one to one_therapy.jpeg" alt="" class="image_courses">
                     <p class="image_courses_text"> one to one videopkald eller telephoneopkald for dem, som fortrækker
                         individuelle sessions.</p>
                     <button class="button"> Book en tid</button>
@@ -549,49 +610,49 @@
 
 
                 <div class="videos_in_toolsonly">
-                    <h5>Cykling Uden Alder. ABC for mental sundhed </h5> <br>
-                    <video src="videoer/mental sundhed 1.mp4" width="350" height="220" class="video_tool"
+                    <h4>Cykling Uden Alder. ABC for mental sundhed </h4> <br>
+                    <video src="videoer/mental sundhed 1.mp4" width="300" height="168,75" class="video_tool"
                         controls></video>
 
                 </div>
                 <div class="videos_in_toolsonly">
-                    <h5>1 hour musik til meditation</h5><br>
-                    <video src="videoer/mental sundhed_4.mp4" width="350" height="220" class="video_tool"
+                    <h4>1 hour musik til meditation</h4><br>
+                    <video src="videoer/mental sundhed_4.mp4" width="300" height="168,75" class="video_tool"
                         controls></video>
 
                 </div>
                 <div class="videos_in_toolsonly">
-                    <h5>Pernille fik en depression som 16-årig. </h5><br>
-                    <video src="videoer/mental sundhed  3.mp4" width="350" height="220" class="video_tool"
+                    <h4>Pernille fik en depression som 16-årig. </h4><br>
+                    <video src="videoer/mental sundhed  3.mp4" width="300" height="168,75" class="video_tool"
                         controls></video>
 
 
                 </div>
 
                 <div class="videos_in_toolsonly">
-                    <h5>Mental sunhed _1 Minute: Depression</h5> <br>
-                    <video src="videoer/mental_sundhed5.mp4" width="350" height="220" class="video_tool"
-                        controls></video>
-
-                </div>
-
-                <div class="videos_in_toolsonly">
-                    <h5>Ærlige unge: Sådan føles angst</h5> <br>
-                    <video src="videoer/mental sundhed 2.mp4" width="350" height="220" class="video_tool"
-                        controls></video>
-
-                </div>
-                <div class="videos_in_toolsonly">
-                    <h5>Derfor er depression alvorligt</h5><br>
-                    <video src="videoer/mental_sunhed_6.mp4" width="350" height="220" class="video_tool"
+                    <h4>Mental sunhed _1 Minute: Depression</h4> <br>
+                    <video src="videoer/mental_sundhed5.mp4" width="300" height="168,75" class="video_tool"
                         controls></video>
 
                 </div>
 
                 <div class="videos_in_toolsonly">
-                    <h5>Hypnose_video: " Slip Angst, Stress, Depression"</h5> <br>
+                    <h4>Ærlige unge: Sådan føles angst</h4> <br>
+                    <video src="videoer/mental sundhed 2.mp4" width="300" height="168,75" class="video_tool"
+                        controls></video>
 
-                    <video src="videoer/relaxing_musik.mp4" width="350" height="220" class="video_tool"
+                </div>
+                <div class="videos_in_toolsonly">
+                    <h4>Derfor er depression alvorligt</h4><br>
+                    <video src="videoer/mental_sunhed_6.mp4" width="300" height="168,75" class="video_tool"
+                        controls></video>
+
+                </div>
+
+                <div class="videos_in_toolsonly">
+                    <h4>Hypnose_video: " Slip Angst, Stress, Depression"</h4> <br>
+
+                    <video src="videoer/relaxing_musik.mp4" width="300" height="168,75" class="video_tool"
                         controls></video>
 
 
@@ -610,71 +671,38 @@
             <section class="audio_box_flexbox">
 
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Áudios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
                 <div class="audio_box">
-                    <p>audios beskrivelse</p>
+                    <h4> Audios beskrivelse </h4>
                     <audio src="videoer/audio1.mp3" controls></audio>
                 </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
-                <div class="audio_box">
-                    <p>audios beskrivelse</p>
-                    <audio src="videoer/audio1.mp3" controls></audio>
-                </div>
+
 
             </section>
             <!--footer, sidste part of my hjemmeside-->
